@@ -2,5 +2,5 @@
 
 ## What is it we want to achieve?
 
-The system will never be able to claim that is secure against every threat. Such a goal is unrealistic. Instead, the systems goal is to collect votes on proposals, store the records in a files. Each file is hashed (SHA 3) and then injected into the bitcoin blockchain. This way the records can be audited by the voters (citizens) without worriing about the records being tampred with.
+The system will never be able to claim that is secure against every threat. Instead, the systems goal is to collect votes on proposals and store the records in a files. When each file is generated - a SHA 3 hash is generated from it and injected into the bitcoin blockchain. This way the file records can be downloaded and audited by the voters.
 
