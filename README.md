@@ -2,11 +2,15 @@
 
 Privacy by Design
 We only store info that is critical. 
-"You have an updated passport" - scan it now. 
+"You have an updated passport" - scan it now.
 
 ### Problem
 
 Scenario: you lost your passport, its vanished, you have a new one. - how do we sort that?
+
+Scenario: A bot attacks the Cloud Functions
+
+Solution: We limit by country IP
 
 ## What is it we want to achieve?
 
