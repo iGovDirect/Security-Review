@@ -2,7 +2,7 @@
 
 ## What is it we want to achieve?
 
-The system will never be able to claim that it is secure against every threat. Instead, the systems goal is to:
+The system will never be able to claim that it is secure against every threat. Instead, the systems goal is to make it more secure and conviniant than todays system by:
 
 1. Scan passports (read MRZ, read chip)
 2. Verify its a real passport (ReadID does some extra verifications, i.e. is there a hashed fingerprint?)
