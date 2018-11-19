@@ -4,6 +4,7 @@
 
 The system will never be able to claim that it is secure against every threat. Instead, the systems goal is to:
 
+1. Scan passports (read MRZ, read chip), hash info them using SHA 3.
 1. Collect votes on a proposal (Google Firestore)
 2. Store the votes in a file (JSON)
 3. Generate a SHA 3 hash of the file
