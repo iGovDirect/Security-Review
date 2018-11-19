@@ -4,12 +4,15 @@
 
 The system will never be able to claim that it is secure against every threat. Instead, the systems goal is to:
 
-1. Scan passports (read MRZ, read chip), hash info them using SHA 3.
-1. Collect votes on a proposal (Google Firestore)
-2. Store the votes in a file (JSON)
-3. Generate a SHA 3 hash of the file
-4. Inject the hash into bitcoin blockchain
-5. Host the file or records for anybody to audit and compare the hash against
+1. Scan passports (read MRZ, read chip)
+2. Verify its a real passport (how does ReadID do this?)
+3. Verify that the personal ID is real (check agaist SPAR etc)
+4. Hash passport info using SHA 3 to create a fingerprint
+5. Collect votes on a proposal (Google Firestore)
+6. Store the votes in a file (JSON)
+7. Generate a SHA 3 hash of the file
+8. Inject the hash into bitcoin blockchain
+9. Host the file or records for anybody to audit and compare the hash against
 
 ### What is the goal of the security review?
 
