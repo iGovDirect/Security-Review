@@ -5,7 +5,7 @@
 The system will never be able to claim that it is secure against every threat. Instead, the systems goal is to:
 
 1. Scan passports (read MRZ, read chip)
-2. Verify its a real passport (how does ReadID do this?)
+2. Verify its a real passport (ReadID does some extra verifications, but how?)
 3. Verify that the personal ID is real (check agaist SPAR etc)
 4. Hash passport info using SHA 3 to create a fingerprint
 5. Collect votes on a proposal (Google Firestore)
