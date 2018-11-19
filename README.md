@@ -1,5 +1,13 @@
 # Security Review
 
+Privacy by Design
+We only store info that is critical. 
+"You have an updated passport" - scan it now. 
+
+### Problem
+
+Scenario: you lost your passport, its vanished, you have a new one. - how do we sort that?
+
 ## What is it we want to achieve?
 
 The system will never be able to claim that it is secure against every threat. Instead, the systems goal is to make it more secure and conviniant than todays system by:
