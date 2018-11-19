@@ -12,5 +12,5 @@ The system will never be able to claim that it is secure against every threat. I
 
 ### What is the goal of the security review?
 
-By letting security experts review code and libraries used we can harden the system. By implemening best practice policies we lower the risk of threats.
+By letting security experts review code and libraries used we can harden the system. By implementing best practice policies and reducing the times we store any sensitive information we not only lower the risk of attacks but reduce the amount of information that is available that is not already publically available.
 
