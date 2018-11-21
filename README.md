@@ -4,13 +4,17 @@ Privacy by Design
 We only store info that is critical. 
 "You have an updated passport" - scan it now.
 
-### Problem
+### Security Threats
 
 Scenario: you lost your passport, its vanished, you have a new one. - how do we sort that?
 
 Scenario: A bot attacks the Cloud Functions
 
 Solution: We limit by country IP
+
+Scenario: Hired hack team tries to perform a "wipe", essentially delete all copies of code.
+
+Solution: Multiple back-ups around the world.
 
 ## What is it we want to achieve?
 
