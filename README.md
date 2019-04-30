@@ -1,8 +1,11 @@
-# Security Review
 
-Privacy by Design
-We only store info that is critical. 
-"You have an updated passport" - scan it now.
+## Privacy by Design
+Privacy by design means that no more information than is necessary is collected, shared or displayed.
+
+## Server Security
+To not depend on the server security (in our case Google), we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real name of it's members proposals and objections. Voting records are subject to audit.
+
+# Security Review
 
 ### Security Threats
 
