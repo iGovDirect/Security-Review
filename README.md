@@ -1,6 +1,6 @@
 
 ## Privacy by Design
-Privacy by design means that no more information than is necessary is collected, shared or displayed.
+Privacy by design means that iGov.Direct only collects, shares and displays information necessary for the system to work.
 
 ## Server Security
 To not depend on the server security (in our case Google), we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real name of it's members proposals and objections. Voting records are subject to audit.
