@@ -53,3 +53,6 @@ For the purpose of security, input that crosses a trust boundary is often the mo
 
 ### Physical Access
 But if u can get physical access with the target pc , mayb u can do a dns spoof for a gmail or the target site.. N ur target will hardly know whats going on,,,, so my advice is that brut force should always b last option
+
+### SMS-AUTH
+It could be an optional feature to allow SMS-AUTH as a second level auth instead of an installed token to protect the account from bots.
