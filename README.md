@@ -1,4 +1,4 @@
-### What is the goal of the security review?
+## What is the goal of the security review?
 
 By letting security experts review code and libraries used the system can be hardened. Threats however come in many different forms so its not only limited to reviewing code.
 
@@ -6,11 +6,11 @@ By letting security experts review code and libraries used the system can be har
 
 Security experts will be allowed to perform a so called "white box pen test" after being provided with code etc by the Foundation. However, the Foundation has a limited access to the overall system itself as it relies heavily on Apple and Google.
 
-## Server Security
+### Server Security
 
 To not depend on the server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real name of it's members proposals and objections. Voting records are subject to audit.
 
-## What is it we want to achieve?
+### What is it we want to achieve?
 
 1. Collect votes on a proposal (Google Firestore)
 2. Store the votes in a file (JSON)
@@ -53,7 +53,7 @@ Scenario: Attacker tries to manipulate a voting record
 Solution: A generated SHA 3 hash of the file is stored in bitcoin blockchain
 
 
-## Reporting a Vulnerability
+### Report a Vulnerability or Threat
 
 Please report a vulnerability or threat to support@ 
 
