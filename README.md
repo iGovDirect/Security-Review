@@ -54,7 +54,7 @@ Solution: A generated SHA 3 hash of the file is stored in bitcoin blockchain
 
 Scenario: Attacker tries to reverse engineer code in app (for whatever reason)
 
-Solution: We obfuscate the code on Android. On iOS the app binary is encrypted using Apple's fairplay. The only way to decrypt encrypted binary data is on a jailbroken device with a few special tools installed. This gives machine code, which is not human-readable. Decompilers can present the app logic in Assembler and give some basic information about method and class names. Trying to figure out the application logicis is exceedingly difficult. 
+Solution: We obfuscate the code on Android. On iOS the app binary is encrypted using Apple's fairplay. The only way to decrypt encrypted binary data is on a jailbroken device with a few special tools installed. This gives machine code, which is not human-readable. Decompilers can present the app logic in Assembler and give some basic information about method and class names, but trying to figure out the app logic is exceedingly difficult.
 
 
 ### Report a Vulnerability or Threat
