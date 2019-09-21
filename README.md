@@ -16,7 +16,8 @@ To not depend on server security, we one-way encrypt passwords, salted uniquely 
 2. Store the votes in a file (JSON)
 3. Generate a SHA 3 hash of the file
 4. Inject the hash into bitcoin blockchain
-5. Host the file or records for anybody to audit and compare the hash against
+5. Store multple copies of the voting files around independent organisations and iGov.Direct storage locations 
+for anybody to audit and compare the hash against
 
 ### Known Security Threats
 
@@ -38,7 +39,9 @@ Solution: We use encryted DNS + Yubikeys
 
 Scenario: Fake passport or id-card tries to register
 
-Solution: We verify its a real passport on a protected backend. For some countries we require a two tier registration, that means after registration, the password is sent as SMS to verify it.
+Solution: We verify passports are real on a protected backend using all security systems built in to passports. 
+For some countries we require a two tier registration, that means after registration, the password is sent as SMS or preferably
+using an authenticator app to verify it.
 
 Scenario: Brut force attack agaist auth function
 
