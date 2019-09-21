@@ -1,58 +1,59 @@
+### What is the goal of the security review?
 
-## Privacy by Design
-Privacy by design means that iGov.Direct only collects, shares and displays information necessary for the system to work. For example, the system never stores any contact information such as email, phone number, address etc. The optional newsletter is handled through 
+By letting security experts review code and libraries used the system can be hardened. Threats however come in many different forms so its not only limited to reviewing code.
+
+### White Box Pentest
+
+Security experts will be allowed to perform a so called "white box pen test" after being provided with code etc by the Foundation. However, the Foundation has a limited access to the overall system itself as it relies heavily on Apple and Google.
 
 ## Server Security
-To not depend on the server security (in our case Google), we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real name of it's members proposals and objections. Voting records are subject to audit.
 
-# Security Review
+To not depend on the server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real name of it's members proposals and objections. Voting records are subject to audit.
 
-### Security Threats
+## What is it we want to achieve?
 
-Scenario: you lost your passport, its vanished, you have a new one. - how do we sort that?
+1. Collect votes on a proposal (Google Firestore)
+2. Store the votes in a file (JSON)
+3. Generate a SHA 3 hash of the file
+4. Inject the hash into bitcoin blockchain
+5. Host the file or records for anybody to audit and compare the hash against
+
+### Known Security Threats
 
 Scenario: A bot attacks the Cloud Functions
 
 Solution: We limit by country IP
 
-Scenario: Hired hack team tries to perform a "wipe", essentially delete all copies of code.
+Scenario: A hired hack team tries to perform a "wipe"
 
-Solution: Multiple back-ups around the world.
+Solution: Multiple back-ups around the world
 
-## What is it we want to achieve?
+Scenario: Open source intelligence (OSINT)
 
-The system will never be able to claim that it is secure against every threat. Instead, the systems goal is to make it more secure and conviniant than todays system by:
+Solution: Limit available information online 
 
-1. Scan passports (read MRZ, read chip)
-2. Verify its a real passport (ReadID does some extra verifications, i.e. is there a hashed fingerprint?)
-3. Verify that the personal ID is real (check agaist SPAR etc)
-4. Hash passport info using SHA 3 to create a fingerprint
-5. Collect votes on a proposal (Google Firestore)
-6. Store the votes in a file (JSON)
-7. Generate a SHA 3 hash of the file
-8. Inject the hash into bitcoin blockchain
-9. Host the file or records for anybody to audit and compare the hash against
+Scenario: DNS spoof for mail or the target site
 
-### What is the goal of the security review?
+Solution: Use encryted DNS
 
-By letting security experts review code and libraries used we can harden the system. By implementing best practice policies and reducing the times we store any sensitive information we not only lower the risk of attacks but reduce the amount of information that is available that is not already publically available.
+Scenario: Fake passport or id-card tries to register
 
-### White Box Pentest
+Solution: Verify its a real passport on a protected backend
 
-## Stage 1
+Scenario: Brut force attack agaist auth function
+
+Solution: Token
+
+Scenario: Physical access with the target pc
+
+Solution: Encryption and hardend passwords
+
+Scenario: Attacker tries to manipulate a voting record
+
+Solution: A generated SHA 3 hash of the file is stored in bitcoin blockchain
 
 
+## Reporting a Vulnerability
 
-Open source intelligence (OSINT)
+Please report a vulnerability or threat to support@ 
 
-### Fuzzing
-
-Fuzzing or fuzz testing is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. The program is then monitored for exceptions such as crashes, failing built-in code assertions, or potential memory leaks. Typically, fuzzers are used to test programs that take structured inputs. This structure is specified, e.g., in a file format or protocol and distinguishes valid from invalid input. An effective fuzzer generates semi-valid inputs that are "valid enough" in that they are not directly rejected by the parser, but do create unexpected behaviors deeper in the program and are "invalid enough" to expose corner cases that have not been properly dealt with.
-
-For the purpose of security, input that crosses a trust boundary is often the most interesting. For example, it is more important to fuzz code that handles the upload of a file by any user than it is to fuzz the code that parses a configuration file that is accessible only to a privileged user.
-
-### Physical Access
-But if u can get physical access with the target pc , mayb u can do a dns spoof for a gmail or the target site.. N ur target will hardly know whats going on,,,, so my advice is that brut force should always b last option
-
-### SMS-AUTH
-It could be an optional feature to allow SMS-AUTH as a second level auth instead of an installed token to protect the account from bots.
