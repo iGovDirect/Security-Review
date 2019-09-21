@@ -42,7 +42,9 @@ Solution: Verify its a real passport on a protected backend
 
 Scenario: Brut force attack agaist auth function
 
-Solution: Token
+Solution: Token, possibly also trigger some security or captcha
+
+Use two tier registration, that means after registration, the password is sent as SMS to verify it.
 
 Scenario: Physical access with the target pc
 
