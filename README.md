@@ -6,7 +6,7 @@ By letting security experts review code and libraries used the system can be har
 
 Security experts will be allowed to perform a so called "white box pen test" after being provided with code etc by the Foundation. However, the Foundation has a limited access to the server security as it relies heavily on Apple and Google.
 
-### Third Party Server Security
+### Server Security (third party)
 
 To not depend on server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the Real Name of it's members proposals and objections. Voting records are also subject to audit.
 
