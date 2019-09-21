@@ -1,14 +1,12 @@
-## What is the goal of the security review?
-
 By letting security experts review code and libraries used the system can be hardened. Threats however come in many different forms so its not only limited to reviewing code.
 
 ### White Box Pentest
 
 Security experts will be allowed to perform a so called "white box pen test" after being provided with code etc by the Foundation. However, the Foundation has a limited access to the overall system itself as it relies heavily on Apple and Google.
 
-### Server Security
+### Third Party Server Security
 
-To not depend on the server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real name of it's members proposals and objections. Voting records are subject to audit.
+To not depend on server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the Real Name of it's members proposals and objections. Voting records are also subject to audit.
 
 ### What is it we want to achieve?
 
