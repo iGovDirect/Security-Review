@@ -34,7 +34,7 @@ Solution: Limit available information online
 
 Scenario: DNS spoof for mail or the target site
 
-Solution: Use encryted DNS
+Solution: Use encryted DNS and Yubikeys
 
 Scenario: Fake passport or id-card tries to register
 
