@@ -4,7 +4,7 @@ By letting security experts review code and libraries used the system can be har
 
 ### White Box Pentest
 
-Security experts will be allowed to perform a so called "white box pen test" after being provided with code etc by the Foundation. However, the Foundation has a limited access to the overall system itself as it relies heavily on Apple and Google.
+Security experts will be allowed to perform a so called "white box pen test" after being provided with code etc by the Foundation. However, the Foundation has a limited access to the server security as it relies heavily on Apple and Google.
 
 ### Third Party Server Security
 
