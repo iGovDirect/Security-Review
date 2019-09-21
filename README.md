@@ -52,6 +52,10 @@ Scenario: Attacker tries to manipulate a voting record
 
 Solution: A generated SHA 3 hash of the file is stored in bitcoin blockchain
 
+Scenario: Attacker tries to reverse engineer code in app.
+
+Solution: 
+
 
 ### Report a Vulnerability or Threat
 
