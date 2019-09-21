@@ -26,29 +26,27 @@ Solution: We limit by country IP
 
 Scenario: A hired hack team tries to perform a "wipe"
 
-Solution: Multiple back-ups around the world
+Solution: We use multiple back-ups around the world
 
 Scenario: Open source intelligence (OSINT)
 
-Solution: Limit available information online 
+Solution: We limit available information online 
 
-Scenario: DNS spoof for mail or the target site
+Scenario: Attacker tries to DNS spoof for mail or target site access
 
-Solution: Use encryted DNS and Yubikeys
+Solution: We use encryted DNS + Yubikeys
 
 Scenario: Fake passport or id-card tries to register
 
-Solution: Verify its a real passport on a protected backend
+Solution: We verify its a real passport on a protected backend. For some countries we require a two tier registration, that means after registration, the password is sent as SMS to verify it.
 
 Scenario: Brut force attack agaist auth function
 
-Solution: Token, possibly also trigger some security or captcha
-
-Use two tier registration, that means after registration, the password is sent as SMS to verify it.
+Solution: Token (possibly also trigger captcha) 
 
 Scenario: Physical access with the target pc
 
-Solution: Encryption and hardend passwords
+Solution: Encrypted, backed-up laptops with hardend passwords
 
 Scenario: Attacker tries to manipulate a voting record
 
