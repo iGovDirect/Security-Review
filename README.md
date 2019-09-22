@@ -72,7 +72,7 @@ Counter Measures: If the target notice that the screen is taken over he/her will
 
 **Scenario:** Attacker uses hardware backdoor in mobiles, put there during delivery from the manufacturer, to change voting results.
 
-Counter Measures: Since voting records are auditable, its possible to figure out which manufactors have this problem. The risk for the manufacurer is high as being cought means criminal charges and a ban of sales.
+Counter Measures: Since voting records are auditable, its possible to figure out which manufactors have this problem. The risk for the manufacurer is high as being cought means criminal charges and most likely a ban of sales.
 
 ### Report a Vulnerability or Threat
 
