@@ -62,13 +62,13 @@ Counter Measures: Encrypted, backed-up laptops with hardend passwords
 
 Counter Measures: A generated SHA 3 hash of the file is stored in bitcoin blockchain
 
-**Scenario:** Attacker tries to reverse engineer code in app (state sponsored)
+**Scenario:** Attacker tries to reverse engineer code in app (Advanced Persistent Threat)
 
 Counter Measures: We obfuscate the code on Android. On iOS the app binary is encrypted using Apple's fairplay. The only way to decrypt encrypted binary data is on a jailbroken device with a few special tools installed. This gives machine code, which is not human-readable. Decompilers can present the app logic in Assembler and give some basic information about method and class names, but trying to figure out the app logic is exceedingly difficult.
 
-**Scenario:** Attacker uses up a zero-day vulnerability to try to remote target computer to perform wipe or manipulate voting results (state sponsored)
+**Scenario:** Attacker uses a zero-day vulnerability with a specific goal of disrupting the service (Advanced Persistent Threat)
 
-Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from internet to stop the attack. The intrusion will be reported as a possible zero-day attack.
+Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from internet to stop the attack. The intrusion will be reported as a possible zero-day attack so it can be patched.
 
 ### Report a Vulnerability or Threat
 
