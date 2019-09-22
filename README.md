@@ -24,14 +24,6 @@ for anybody to audit and compare the hash against
 There are many scenarios, but below are a few. The threat level will naturally correlate to the number of voters and members. Listed from medium risk to low risk.
 
 
-**Scenario:** A bot attacks the Cloud Functions
-
-Counter Measures: We limit by country IP
-
-**Scenario:** A hired hack team tries to perform a "wipe"
-
-Counter Measures: We dump multiple back-ups around the world
-
 **Scenario:** Attacker uses open source intelligence (OSINT) to find targets (developers)
 
 Counter Measures: We limit available information online and at authorities
@@ -48,6 +40,14 @@ Counter Measures: We use encryted DNS + Yubikeys (thanks Yubico for support)
 
 Counter Measures: We verify passports are real on a protected backend using all security systems built in to passports. 
 For some countries we require a two tier registration, that means after registration, the password is sent as SMS or preferably using an authenticator app to verify it.
+
+**Scenario:** A bot attacks the Cloud Functions
+
+Counter Measures: We limit by country IP
+
+**Scenario:** A hired hack team tries to perform a "wipe"
+
+Counter Measures: We dump multiple back-ups around the world
 
 **Scenario:** Brut force attack agaist auth function
 
