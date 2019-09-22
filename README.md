@@ -1,6 +1,6 @@
 ## Security Review
 
-By letting security experts review code and libraries used the system can be hardened. Threats however come in many different forms so its not only limited to reviewing code. There are many such scenarios, but below are a few. The threat level will naturally correlate to the number of voters and members.
+By letting security experts review code and libraries used the system can be hardened. Threats however come in many different forms so its not only limited to reviewing code.
 
 ### White Box Pentest
 
@@ -21,7 +21,8 @@ for anybody to audit and compare the hash against
 
 ### Known Security Threats
 
-#### From medium risk to low risk
+There are many scenarios, but below are a few. The threat level will naturally correlate to the number of voters and members. Listed from medium risk to low risk.
+
 
 **Scenario: A bot attacks the Cloud Functions**
 
