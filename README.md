@@ -35,7 +35,7 @@ Solution: We limit available information online and at authorities
 
 Scenario: Attacker tries to DNS spoof for mail or target site access
 
-Solution: We use encryted DNS + Yubikeys
+Solution: We use encryted DNS + Yubikeys (thanks Yubico for support)
 
 Scenario: Fake passport or id-card tries to register
 
