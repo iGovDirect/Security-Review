@@ -33,7 +33,7 @@ Scenario: Attacker uses open source intelligence (OSINT) to find targets
 
 Solution: We limit available information online and at authorities
 
-Scenario: Attacker tries to DNS spoof for mail i.e. target@igov.direct (thanks [Google Suite](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. github.com/iGovDirect (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation).
+Scenario: Attacker tries to DNS spoof for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation).
 
 Solution: We use encryted DNS + Yubikeys (thanks Yubico for support)
 
