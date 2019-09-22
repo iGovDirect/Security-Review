@@ -4,11 +4,11 @@ By letting security experts review code and libraries used the system can be har
 
 ### White Box Pentest
 
-Security experts will be allowed to perform a so called "white box pen test" after being provided with code etc by the Foundation. However, the Foundation has a limited access to the server security as it relies heavily on Apple and Google.
+Well known security experts and researchers will be invited to perform a so called "white box pen test". This means they are provided with the source code to easier detect vulnerabilites (after passing these tests, the code can be made open source). However, the Foundation has a limited access to the server security as it relies heavily on third parties, hence Apple and Google.
 
 ### Server Security (third party)
 
-To not depend on server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the Real Name of it's members proposals and objections. Voting records are also subject to audit.
+To not depend on third party server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real author of it's members proposals and objections. Voting records are also subject to audit.
 
 ### What is it we want to achieve?
 
