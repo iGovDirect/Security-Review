@@ -21,19 +21,25 @@ for anybody to audit and compare the hash against
 
 ### Known Security Threats
 
+#### From medium risk to low risk
+
 Scenario: A bot attacks the Cloud Functions
 
 Solution: We limit by country IP
 
 Scenario: A hired hack team tries to perform a "wipe"
 
-Solution: We use multiple back-ups around the world
+Solution: We dump multiple back-ups around the world
 
 Scenario: Attacker uses open source intelligence (OSINT) to find targets
 
 Solution: We limit available information online and at authorities
 
-Scenario: Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation).
+Scenario: Attacker downloads a bunch of password dumps. Attacker searches dumps for passwords of emails (found through from OSINT).
+
+Solution: No password-reuse is allowed
+
+Scenario: Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other websites the Foundation holds are LinkedIn
 
 Solution: We use encryted DNS + Yubikeys (thanks Yubico for support)
 
