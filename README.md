@@ -69,7 +69,7 @@ Counter Measures: We obfuscate the code on Android. On iOS the app binary is enc
 
 Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from internet to stop the attack. The intrusion will be reported as a possible zero-day attack so it can be patched.
 
-**Scenario:** Attacker uses hardware backdoor in mobiles, put there during delivery from the manufacturer, to change voting results.
+**Scenario:** Attacker uses hardware backdoor in mobiles, put there during delivery from the manufacturer, to change voting results. (Advanced Persistent Threat)
 
 Counter Measures: Since voting records are auditable, its possible to figure out which manufactors have this problem. The risk for the manufacurer is high as being cought means criminal charges and most likely a ban of sales.
 
