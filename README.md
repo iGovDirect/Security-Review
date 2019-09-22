@@ -1,6 +1,6 @@
 ## Security Review
 
-By letting security experts review code and libraries used the system can be hardened. Threats however come in many different forms so its not only limited to reviewing code.
+By letting security experts review code and libraries used the system can be hardened. Threats however come in many different forms so its not only limited to reviewing code. There are many such scenarios, but below are a few. The threat level will naturally correlates to the growth of voters and members.
 
 ### White Box Pentest
 
