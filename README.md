@@ -54,7 +54,7 @@ using an authenticator app to verify it.
 
 Counter Measures: Token (possibly also trigger captcha) 
 
-**Scenario:** Physical access with the target pc
+**Scenario:** Physical access with the target pc due to burglary or theft
 
 Counter Measures: Encrypted, backed-up laptops with hardend passwords
 
