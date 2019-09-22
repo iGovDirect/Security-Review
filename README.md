@@ -37,7 +37,7 @@ Solution: We limit available information online and at authorities
 
 Scenario: Attacker downloads a bunch of password dumps. Attacker searches dumps for passwords of emails (found through from OSINT).
 
-Solution: No password-reuse is allowed
+Solution: YubiKey security key replacing password-based authentication (FIDO2)
 
 Scenario: Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other websites the Foundation holds are LinkedIn
 
@@ -61,10 +61,13 @@ Scenario: Attacker tries to manipulate a voting record
 
 Solution: A generated SHA 3 hash of the file is stored in bitcoin blockchain
 
-Scenario: Attacker tries to reverse engineer code in app (for whatever reason)
+Scenario: Attacker tries to reverse engineer code in app (state sponsored)
 
 Solution: We obfuscate the code on Android. On iOS the app binary is encrypted using Apple's fairplay. The only way to decrypt encrypted binary data is on a jailbroken device with a few special tools installed. This gives machine code, which is not human-readable. Decompilers can present the app logic in Assembler and give some basic information about method and class names, but trying to figure out the app logic is exceedingly difficult.
 
+Scenario: Attacker uses up a zero-day vulnerability to try to remote target computer to perform wipe or manipulate voting results (state sponsored)
+
+Solution: If the target notice that the screen is taken over he/her will have to unplug from internet to stop the attack. The intrusion will be reported as a possible zero-day attack.
 
 ### Report a Vulnerability or Threat
 
