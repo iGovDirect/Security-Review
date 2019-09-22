@@ -33,7 +33,7 @@ Scenario: Attacker uses open source intelligence (OSINT) to find targets
 
 Solution: We limit available information online and at authorities
 
-Scenario: Attacker tries to DNS spoof for mail or target site access
+Scenario: Attacker tries to DNS spoof for mail or target site access i.e. github.com/iGovDirect  (thanks Github for support)
 
 Solution: We use encryted DNS + Yubikeys (thanks Yubico for support)
 
