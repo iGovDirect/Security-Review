@@ -34,7 +34,7 @@ Counter Measures: YubiKey security key replacing password-based authentication (
 
 **Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other social media website account the Foundation holds, but don't use are LinkedIn, Facebook, and Twitter.
 
-Counter Measures: We use encryted DNS + Yubikeys (thanks Yubico for support)
+Counter Measures: We use VPN, encryted DNS, and Yubikeys (thanks Yubico for support)
 
 **Scenario:** Fake passport or id-card tries to register
 
