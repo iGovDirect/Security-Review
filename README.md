@@ -36,22 +36,22 @@ Counter Measures: YubiKey security key replacing password-based authentication (
 
 Counter Measures: We use VPN, encryted DNS, and Yubikeys (thanks Yubico for support)
 
-**Scenario:** Fake passport or id-card tries to register
+**Scenario:** Attacker tries to register fake passports or id-cards
 
-Counter Measures: We verify passports are real on a protected backend using all security systems built in to passports. 
+Counter Measures: We verify that passports are real on a protected backend using all security systems built in to passports. 
 For some countries we require a two tier registration, that means after registration, the password is sent as SMS or preferably using an authenticator app to verify it.
 
-**Scenario:** A bot attacks the Cloud Functions
+**Scenario:** A distributed denial-of-service (DDoS) against the website
 
-Counter Measures: We limit by country IP
+Counter Measures: Requires help from Google or possibly CloudFlare.
 
 **Scenario:** A hired hack team tries to perform a "wipe"
 
-Counter Measures: We dump multiple back-ups around the world
+Counter Measures: We regulary keep back-up dumpes on usb-sticks around the world
 
-**Scenario:** Brut force attack agaist auth function
+**Scenario:** Attacker tries a brut force attack agaist auth cloud function
 
-Counter Measures: Token (possibly also trigger captcha) 
+Counter Measures: 
 
 **Scenario:** Physical access with the target pc due to burglary or theft
 
