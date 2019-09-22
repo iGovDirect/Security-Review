@@ -29,9 +29,9 @@ Scenario: A hired hack team tries to perform a "wipe"
 
 Solution: We use multiple back-ups around the world
 
-Scenario: Open source intelligence (OSINT) to find targets
+Scenario: Attacker uses open source intelligence (OSINT) to find targets
 
-Solution: We limit available information online 
+Solution: We limit available information online and at authorities
 
 Scenario: Attacker tries to DNS spoof for mail or target site access
 
