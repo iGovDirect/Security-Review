@@ -40,15 +40,14 @@ Counter Measures: We limit available information online and at authorities
 
 Counter Measures: YubiKey security key replacing password-based authentication (FIDO2)
 
-**Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other websites the Foundation holds are LinkedIn
+**Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other social media website account the Foundation holds, but don't use are LinkedIn, Facebook, and Twitter.
 
 Counter Measures: We use encryted DNS + Yubikeys (thanks Yubico for support)
 
 **Scenario:** Fake passport or id-card tries to register
 
 Counter Measures: We verify passports are real on a protected backend using all security systems built in to passports. 
-For some countries we require a two tier registration, that means after registration, the password is sent as SMS or preferably
-using an authenticator app to verify it.
+For some countries we require a two tier registration, that means after registration, the password is sent as SMS or preferably using an authenticator app to verify it.
 
 **Scenario:** Brut force attack agaist auth function
 
