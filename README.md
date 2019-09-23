@@ -8,7 +8,19 @@ Well known security experts and researchers will be invited to perform a so call
 
 ### Server Security (third party)
 
+Following the overall objective to **not be responsible for server infrastructure, optimize for search engines and performance anywhere** - a serverless architecture is used.
+
+To add features easily, Google Firebase was choosen. Firebase offers integrated services such as [Authentication](https://firebase.google.com/docs/auth/), [Performance Monitoring](https://firebase.google.com/docs/perf-mon/), [Realtime Database](https://firebase.google.com/docs/database/)), and Cloud Functions¹ (JavaScript). Data is stored as JSON and synchronized in realtime to every connected client. Using the iOS, Android, and JavaScript SDKs, all clients share one Realtime/Firestore Database instance and automatically receive updates with the newest data.
+
+_FaaS platforms (i.e. AWS Lambda, Google Cloud Functions¹, Microsoft Azure Functions) execute application logic but do not store data. A “serverless” application architecture means the burden of protecting and scaling servers is outsourced (in this case to Google). Made with Cloudcraft._
+
+_¹Google Cloud functions is a lightweight, event-based, asynchronous compute solution that allows to create small, single-purpose functions that respond to cloud events without the need to manage a server or a runtime environment. GCF are written in JavaScript and execute in a standard Node.js runtime environment. Functions get dynamically scaled up or down depending on current number of requests and gets time or invocations limits rather than server limits._
+
 To not depend on third party server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real author of it's members proposals and objections. Voting records are also subject to audit.
+
+# Systems Architecture
+![](https://user-images.githubusercontent.com/36473429/44372568-c63a2c00-a4e4-11e8-8b5a-05418d23f65e.png)
+
 
 ### What is it we want to achieve?
 
