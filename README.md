@@ -17,7 +17,7 @@ To not depend on third party server security, we one-way encrypt passwords, salt
 # Systems Architecture
 ![](https://user-images.githubusercontent.com/36473429/44372568-c63a2c00-a4e4-11e8-8b5a-05418d23f65e.png)
 
-_ A “serverless” application architecture means the burden of protecting and scaling servers is outsourced (in this case to Google). Made with Cloudcraft._
+_A serverless application architecture means the burden of protecting and scaling servers is outsourced (in this case to Google). Made with Cloudcraft._
 
 ### What is it we want to achieve?
 
