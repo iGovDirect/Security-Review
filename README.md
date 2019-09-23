@@ -15,7 +15,7 @@ _¹Google Cloud functions is a lightweight, event-based, asynchronous compute so
 To not depend on third party server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real author of it's members proposals and objections. Voting records are also subject to audit.
 
 # Systems Architecture
-![](https://user-images.githubusercontent.com/36473429/44372568-c63a2c00-a4e4-11e8-8b5a-05418d23f65e.png)
+<img width="830" alt="iGov backend 2019-09-17 kl  21 06 48" src="https://user-images.githubusercontent.com/36473429/65071656-88316500-d98f-11e9-9eb9-55b8c1a9c3ec.png">
 
 _A serverless application architecture means the burden of protecting and scaling servers is outsourced (in this case to Google). Made with Cloudcraft._
 
