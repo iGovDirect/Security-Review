@@ -30,7 +30,7 @@ Counter Measures: We limit available information online and at authorities
 
 **Scenario:** Attacker downloads a bunch of password dumps. Attacker searches dumps for passwords of emails (found through from OSINT).
 
-Counter Measures: YubiKey security key replacing password-based authentication (FIDO2)
+Counter Measures: Two factor authentication should be used including YubiKey security key replacing password-based authentication (FIDO2)
 
 **Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other social media website account the Foundation holds, but don't use are LinkedIn, Facebook, and Twitter.
 
