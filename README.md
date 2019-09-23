@@ -51,7 +51,7 @@ Counter Measures: We regulary keep back-up dumpes on usb-sticks around the world
 
 **Scenario:** Attacker tries a brut force attack agaist auth cloud function on multiple accounts to trigger them to lock down in an attemt to disrupt the service
 
-Counter Measures: Before asking for username and password, a unique token is required. However, an attack can still cost the foundation a lot of money. Google is working on a solution: https://cloud.google.com/functions/docs/securing/
+Counter Measures: Before asking for username and password, a unique token is required. However, an attack can still cost the foundation a lot of money. Google is working on a solution (beta): https://cloud.google.com/functions/docs/securing/managing-access
 
 **Scenario:** Physical access with the target pc due to burglary or theft
 
