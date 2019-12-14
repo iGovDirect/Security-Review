@@ -4,7 +4,7 @@ By letting security experts review code and libraries used the system can be har
 
 ### White Box Pentest
 
-Well known security experts and researchers will be invited to perform a so called "white box pen test". This means they are provided with the source code to easier detect vulnerabilites (after passing these tests, the code can be made open source). However, the Foundation has a limited access to the server security as it relies heavily on third parties, hence Apple and Google.
+Well known security experts and researchers will be invited to perform a so called "white box pen test". This means they are provided with the source code to easier detect vulnerabilites. After passing these initial audits, the code could made open source to let more security researchers look at it. This would oviously also mean a risk of being a target for ill willing people so its not an easy choice. The researchers would only get access to the app source code as the Foundation has a very limited knowledge of the server security due to relying on Apple and Google for this.
 
 ### Server Security (third party)
 
