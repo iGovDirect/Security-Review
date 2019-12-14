@@ -4,32 +4,31 @@ By letting security experts review code and libraries used the system can be har
 
 ### White Box Pentest
 
-Well known security experts and researchers will be invited to perform a so called "white box pen test". This means they are provided with the source code to easier detect vulnerabilites. After passing these initial audits, the code could made open source to let more security researchers look at it. This would oviously also mean a risk of being a target for ill willing people so its not an easy choice. The researchers would only get access to the app source code as the Foundation has a very limited knowledge of the server security due to relying on Apple and Google for this.
+Well known security experts and researchers will be invited to perform a so called "white box pen test". This means they are provided with the source code to easier detect vulnerabilites. After passing these initial audits, the code could made open source to let more security researchers look at it. This would oviously also mean a risk of being a target for ill willing people so its not an easy choice. The researchers would only get access to the client/backend source code as the Foundation is relying on a serverless architecture (see server security below).
 
 ### Server Security (third party)
 
-Following the overall objective to **not be responsible for server infrastructure, optimize for search engines and performance anywhere** - a serverless architecture is used. Serverless platforms (i.e. AWS Lambda, Google Cloud Functions¹, Microsoft Azure Functions) execute application logic but do not store data. Data is stored as JSON and synchronizes in realtime to every connected client using the iOS, Android, and JavaScript SDKs. Google Firebase is currently used. 
+Following the overall objective to **not be responsible for server infrastructure, optimize for search engines and performance anywhere** - a serverless architecture is used. Serverless platforms (i.e. AWS Lambda, Google Cloud Functions¹, Microsoft Azure Functions) execute application logic but do not store data. Data is stored as JSON and synchronizes in realtime to every connected client using the iOS, Android, and JavaScript SDKs. The Foundations current serverless plattform is Google Cloud.
 
-_¹Google Cloud functions is a lightweight, event-based, asynchronous compute solution that allows to create small, single-purpose functions that respond to cloud events without the need to manage a server or a runtime environment. GCF are written in JavaScript and execute in a standard Node.js runtime environment. Functions get dynamically scaled up or down depending on current number of requests and gets time or invocations limits rather than server limits._
+_¹Google Cloud Functions (GCF) is a lightweight, event-based, asynchronous compute solution that allows to create small, single-purpose functions that respond to cloud events without the need to manage a server or a runtime environment. GCF are written in JavaScript and execute in a standard Node.js runtime environment. Functions get dynamically scaled up or down depending on current number of requests and gets time or invocations limits rather than server limits._
 
-To not depend on third party server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real author of it's members proposals and objections. Voting records are also subject to audit.
+To not depend on third party server security, we one-way encrypt passwords, salted uniquely per user, and send all traffic over TLS. However, iGov.Direct's integrity is built on showing the real name of proposals and objections authors (to prevent trolling). The voting records are also subject to audit to prevent manipulation and fraud.
 
 <img width="830" alt="iGov backend 2019-09-17 kl  21 06 48" src="https://user-images.githubusercontent.com/36473429/65071656-88316500-d98f-11e9-9eb9-55b8c1a9c3ec.png">
 
 _A serverless application architecture means the burden of protecting and scaling servers is outsourced (in this case to Google). Made with Cloudcraft._
 
-### What is it we want to achieve?
+### How does iGov.Direct's digital democracy work?
 
-1. Collect votes on a proposal (Google Firestore)
-2. Store the votes in a file (JSON)
-3. Generate a SHA 3 hash of the file
-4. Inject the hash into bitcoin blockchain
-5. Store multple copies of the voting files around independent organisations and iGov.Direct storage locations 
-for anybody to audit and compare the hash against
+1. The system stores votes on a proposal in Google Firestore
+2. The system generates a JSON file with all the votes on the voting deadline
+3. The system generates a SHA 3 hash of the JSON file
+4. The system injects the SHA 3 hash into the bitcoin blockchain
+5. The system makes the voting files availble for anybody to audit and compare the hash against
 
 ### Known Security Threats
 
-There are many scenarios, but below are a few. The threat level will naturally correlate to the number of voters and members. Listed from medium risk to low risk.
+There are many scenarios, but below are a few. The threat level will naturally correlate to the number of voters and members. Listed from medium to low risk.
 
 
 **Scenario:** Attacker uses open source intelligence (OSINT) to find targets (developers)
