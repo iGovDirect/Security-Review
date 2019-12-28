@@ -4,11 +4,11 @@ By letting security experts review code and libraries used the system can be har
 
 ### White Box Pentest
 
-Well known security experts and researchers will be invited to perform a so called "white box pen test". This means they are provided with the source code to easier detect vulnerabilites. After passing these initial audits, the code could made open source to let more security researchers look at it. This would oviously also mean a risk of being a target for ill willing people so its not an easy choice. The researchers would only get access to the client/backend source code as the Foundation is relying on a serverless architecture (see server security below).
+Well known security experts and researchers will be invited to perform a so called "white box pen test". This means they are provided with the source code to easier detect vulnerabilities. After passing these initial audits, the code could made open source to let more security researchers look at it. This would obviously also mean a risk of being a target for ill willing people so it's not an easy choice. The researchers would only get access to the client/backend source code as the Foundation is relying on a serverless architecture (see server security below).
 
 ### Server Security (third party)
 
-Following the overall objective to **not be responsible for server infrastructure, optimize for search engines and performance anywhere** - a serverless architecture is used. Serverless platforms (i.e. AWS Lambda, Google Cloud Functions¹, Microsoft Azure Functions) execute application logic but do not store data. Data is stored as JSON and synchronizes in realtime to every connected client using the iOS, Android, and JavaScript SDKs. The Foundations current serverless plattform is Google Cloud.
+Following the overall objective to **not be responsible for server infrastructure, optimize for search engines and performance anywhere** - a serverless architecture is used. Serverless platforms (i.e. AWS Lambda, Google Cloud Functions¹, Microsoft Azure Functions) execute application logic but do not store data. Data is stored as JSON and synchronizes in realtime to every connected client using the iOS, Android, and JavaScript SDKs. The Foundations current serverless platform is Google Cloud.
 
 _¹Google Cloud Functions (GCF) is a lightweight, event-based, asynchronous compute solution that allows to create small, single-purpose functions that respond to cloud events without the need to manage a server or a runtime environment. GCF are written in JavaScript and execute in a standard Node.js runtime environment. Functions get dynamically scaled up or down depending on current number of requests and gets time or invocations limits rather than server limits._
 
@@ -24,7 +24,7 @@ _A serverless application architecture means the burden of protecting and scalin
 2. The system generates a JSON file with all the votes on the voting deadline
 3. The system generates a SHA 3 hash of the JSON file
 4. The system injects the SHA 3 hash into the bitcoin blockchain
-5. The system makes the voting files availble for anybody to audit and compare the hash against
+5. The system makes the voting files available for anybody to audit and compare the hash against
 
 ### Known Security Threats
 
@@ -41,7 +41,7 @@ Counter Measures: Two factor authentication should be used including YubiKey sec
 
 **Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other social media website account the Foundation holds, but don't use are LinkedIn, Facebook, and Twitter.
 
-Counter Measures: We use VPN, encryted DNS, and Yubikeys (thanks Yubico for support)
+Counter Measures: We use VPN, encrypted DNS, and Yubikeys (thanks Yubico for support)
 
 **Scenario:** Attacker tries to register fake passports or id-cards
 
@@ -54,15 +54,15 @@ Counter Measures: Requires help from Google or possibly CloudFlare.
 
 **Scenario:** A hired hack team tries to perform a "wipe"
 
-Counter Measures: We regulary keep back-up dumpes on usb-sticks around the world
+Counter Measures: We regularly keep back-up dumpes on usb-sticks around the world
 
-**Scenario:** Attacker tries a brute force attack agaist auth cloud function on multiple accounts to trigger them to lock down in an attempt to disrupt the service
+**Scenario:** Attacker tries a brute force attack against auth cloud function on multiple accounts to trigger them to lock down in an attempt to disrupt the service
 
-Counter Measures: Only allow function access for authenticated users. When a user registers they get a unique token. This is then used to access every function after that. Any attempt to access such a function will be rejceted by google. 
+Counter Measures: Only allow function access for authenticated users. When a user registers they get a unique token. This is then used to access every function after that. Any attempt to access such a function will be rejected by google. 
 
 **Scenario:** Physical access with the target pc due to burglary or theft
 
-Counter Measures: Encrypted, backed-up laptops with hardend passwords
+Counter Measures: Encrypted, backed-up laptops with hardened passwords
 
 **Scenario:** Attacker tries to manipulate a voting record
 
@@ -74,11 +74,11 @@ Counter Measures: We obfuscate the code on Android. On iOS the app binary is enc
 
 **Scenario:** Attacker uses a zero-day vulnerability with a specific goal of disrupting the service by taking over target computer (Advanced Persistent Threat)
 
-Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from internet to stop the attack. The intrusion will be reported as a possible zero-day attack so it can be patched.
+Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from the internet to stop the attack. The intrusion will be reported as a possible zero-day attack so it can be patched.
 
 **Scenario:** Attacker uses hardware backdoor in mobiles, put there during delivery from the manufacturer, to change voting results. (Advanced Persistent Threat)
 
-Counter Measures: Since voting records are auditable, its possible to figure out which manufactors have this problem. The risk for the manufacurer is high as being cought means criminal charges and most likely a ban of sales.
+Counter Measures: Since voting records are auditable, it's possible to figure out which manufacturers have this problem. The risk for the manufacturer is high as being caught means criminal charges and most likely a ban of sales.
 
 ### Report a Vulnerability or Threat
 
