@@ -26,9 +26,9 @@ _A serverless application architecture means the burden of protecting and scalin
 4. The system injects the SHA 3 hash into the bitcoin blockchain
 5. The system makes the voting files available for anybody to audit and compare the hash against
 
-### Known Security Threats
+### Security Threats
 
-There are many scenarios, but below are a few. The threat level will naturally correlate to the number of voters and members. Listed from medium to low risk.
+There are many, many scenarios, but below are a few examples. The threat level will naturally correlate to the number of voters and members. Listed from medium to low risk (due to the level of work required for the attacker).
 
 
 **Scenario:** Attacker uses open source intelligence (OSINT) to find targets (developers)
@@ -79,9 +79,9 @@ Counter Measures: The Foundation obfuscate the code on Android. On iOS the app b
 
 Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from the internet to stop the attack. The intrusion will be reported as a possible zero-day attack so it can be patched.
 
-**Scenario:** Attacker uses hardware backdoor in mobiles, put there during delivery from the manufacturer, to change voting results. (Advanced Persistent Threat)
+**Scenario:** Attacker uses hardware backdoor in mobiles, put there during delivery from the manufacturer, to change voting results in a limited number of proposals to avoid detection. (Advanced Persistent Threat)
 
-Counter Measures: Since voting records are auditable, it's possible to figure out which manufacturers have this problem. The risk for the manufacturer is high as being caught means criminal charges and most likely a ban of sales.
+Counter Measures: Since voting records are auditable for anybody, voters will be able to see if their vote changed. The Foundation also hope to use AI to trigger audits when neccessary. The risk for the manufacturer is very high as being caught means criminal charges and most likely a ban of sales.
 
 ### Report a Vulnerability or Threat
 
