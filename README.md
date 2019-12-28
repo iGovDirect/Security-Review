@@ -33,39 +33,39 @@ There are many, many scenarios, but below are a few examples. The threat level w
 
 **Scenario:** Attacker uses open source intelligence (OSINT) to find targets (developers)
 
-Counter Measures: The Foundation limits the available information online
+Counter Measures: The Foundation limits information of its current developers on a need to know basis
 
 **Scenario:** Attacker downloads a bunch of password dumps. Attacker searches dumps for passwords of emails (found through from OSINT).
 
-Counter Measures: The Foundation uses two factor authentication, including YubiKey security keys.
+Counter Measures: The Foundation uses two factor authentication, including YubiKey security keys, making passwords insufficiant for access.
 
-**Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other social media website account the Foundation holds, but don't use are LinkedIn, Facebook, and Twitter.
+**Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. GitHub (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other social media website account the Foundation holds, but don't use are LinkedIn, Facebook, and Twitter.
 
-Counter Measures: The Foundation use VPN, encrypted DNS, and Yubikeys (thanks Yubico for support)
+Counter Measures: The Foundation uses VPN, encrypted DNS, and Yubikeys (thanks Yubico for support) making DNS spoof impossible.
 
-**Scenario:** Attacker tries to register fake passports or id-cards
+**Scenario:** Attacker tries to register with fake passports or id-cards
 
-Counter Measures: The Foundation will be able to verify if a passports is real using a combination of security systems built in to modern passports and national-ID cards with its backend.
+Counter Measures: The Foundation will be able to verify if a passports is fake. This is done by using a the security systems built in to modern passports/ID cards with the Foundation backend.
 
 **Scenario:** Attacker launches a distributed denial-of-service (DDoS) against the Foundation website or backend
 
-Counter Measures: The Foundation will request help from Google (or possibly CloudFlare)
+Counter Measures: The Foundation requests help from Google (or possibly CloudFlare) to clean out spam data
 
 **Scenario:** Attacker hires a hack team to perform a "wipe", hence delete all data
 
-Counter Measures: The Foundtaion regularly keep back-up dumpes on usb-sticks around the world
+Counter Measures: The Foundation keep back-up dumpes on usb-sticks around the world
 
 **Scenario:** Attacker tries a brute force attack against auth cloud function on multiple accounts to trigger them to lock down in an attempt to disrupt the service
 
 Counter Measures: The Foundation will only allow function access for authenticated users. When a user registers they get a unique token. This is then used to access every function after that. Any attempt to access such a function with the token will be rejected.
 
-**Scenario:** Attacker gets physical access with a target laptop due to burglary or theft.
+**Scenario:** Attacker have physical access with a target laptop after a burglary or theft and tries to get in.
 
-Counter Measures: The Foundation encrypts and back-up laptops reguraly
+Counter Measures: The Foundation encrypts laptop data in a way its not possible to access.
 
-**Scenario** State backed attacker uses electronics-sniffing dogs to find hidden usb-sticks in Wipe operation
+**Scenario** Attacker (nation state) uses electronics-sniffing dogs to find hidden usb-sticks in Wipe operation
 
-Counter Measures: The Foundation keeps copies at multiple locations around the world
+Counter Measures: The Foundation keeps copies of code at multiple locations (around the world)
 
 **Scenario:** Attacker tries to manipulate a voting record
 
@@ -75,13 +75,13 @@ Counter Measures: A generated SHA 3 hash of the file is stored in bitcoin blockc
 
 Counter Measures: The Foundation obfuscate the code on Android. On iOS the app binary is encrypted using Apple's fairplay. The only way to decrypt encrypted binary data is on a jailbroken device with a few special tools installed. This gives machine code, which is not human-readable. Decompilers can present the app logic in Assembler and give some basic information about method and class names, but trying to figure out the app logic is exceedingly difficult.
 
-**Scenario:** Attacker uses a zero-day vulnerability with a specific goal of disrupting the service by taking over target computer (Advanced Persistent Threat)
+**Scenario:** Attacker uses a zero-day vulnerability to remote a target computer with the goal of changing voting results in a limited number of proposals to avoid detection. (Advanced Persistent Threat)
 
-Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from the internet to stop the attack. The intrusion will be reported as a possible zero-day attack so it can be patched.
+Counter Measures: If the target notice that the screen is taken over he/her will have to unplug from the internet to stop the attack. The intrusion will be reported as a possible zero-day attack so it can be patched. Zero-day vulnerabilities are very expensive and therefor very unlikely. In the end they are also possible to detect during audit of voting records.
 
 **Scenario:** Attacker uses hardware backdoor in mobiles, put there during delivery from the manufacturer, to change voting results in a limited number of proposals to avoid detection. (Advanced Persistent Threat)
 
-Counter Measures: Since voting records are auditable for anybody, voters will be able to see if their vote changed. The Foundation also hope to use AI to trigger audits when neccessary. The risk for the manufacturer is very high as being caught means criminal charges and most likely a ban of sales.
+Counter Measures: Since voting records are auditable for anybody, voters will be able to see if their vote changed. The Foundation also hope to use AI to trigger audits when neccessary. The risk and price for the manufacturer is very high as being caught means criminal charges and most likely a ban of sales.
 
 ### Report a Vulnerability or Threat
 
