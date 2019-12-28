@@ -83,7 +83,7 @@ Counter Measures: If the target notice that the screen is taken over he/her will
 
 Counter Measures: Since voting records are auditable for anybody, voters will be able to see if their vote changed. The Foundation also hope to use AI to trigger audits when neccessary. The risk and price for the manufacturer is very high as being caught means criminal charges and most likely a ban of sales.
 
-### Report a Vulnerability or Threat
+### Report a Vulnerability
 
-Please report a vulnerability or threat to support@ 
+Please report any found vulnerability to support@ 
 
