@@ -33,7 +33,7 @@ There are many, many scenarios, but below are a few examples. The threat level w
 
 **Scenario:** Attacker uses open source intelligence (OSINT) to find targets (developers)
 
-Counter Measures: The Foundation limit available information online and state authorities
+Counter Measures: The Foundation limits the available information online
 
 **Scenario:** Attacker downloads a bunch of password dumps. Attacker searches dumps for passwords of emails (found through from OSINT).
 
