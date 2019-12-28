@@ -33,44 +33,47 @@ There are many scenarios, but below are a few. The threat level will naturally c
 
 **Scenario:** Attacker uses open source intelligence (OSINT) to find targets (developers)
 
-Counter Measures: We limit available information online and at authorities
+Counter Measures: The Foundation limit available information online and state authorities
 
 **Scenario:** Attacker downloads a bunch of password dumps. Attacker searches dumps for passwords of emails (found through from OSINT).
 
-Counter Measures: Two factor authentication should be used including YubiKey security key replacing password-based authentication (FIDO2)
+Counter Measures: The Foundation uses two factor authentication, including YubiKey security keys.
 
 **Scenario:** Attacker tries to DNS spoof targets for mail i.e. target@igov.direct (thanks [G Suite by Google cloud](https://gsuite.google.com) for supporting the Foundation), or target website access i.e. this one (thanks [GitHub](https://github.com) for supporting the Foundation) or ads.google.com (thanks [Google Ads](https://ads.google.com/home/) for supporting the Foundation). Other social media website account the Foundation holds, but don't use are LinkedIn, Facebook, and Twitter.
 
-Counter Measures: We use VPN, encrypted DNS, and Yubikeys (thanks Yubico for support)
+Counter Measures: The Foundation use VPN, encrypted DNS, and Yubikeys (thanks Yubico for support)
 
 **Scenario:** Attacker tries to register fake passports or id-cards
 
-Counter Measures: We verify that passports are real on a protected backend using all security systems built in to passports. 
-For some countries we require a two tier registration, that means after registration, the password is sent as SMS or preferably using an authenticator app to verify it.
+Counter Measures: The Foundation will be able to verify if a passports is real using a combination of security systems built in to modern passports and national-ID cards with its backend.
 
-**Scenario:** A distributed denial-of-service (DDoS) against the website
+**Scenario:** Attacker launches a distributed denial-of-service (DDoS) against the Foundation website or backend
 
-Counter Measures: Requires help from Google or possibly CloudFlare.
+Counter Measures: The Foundation will request help from Google (or possibly CloudFlare)
 
-**Scenario:** A hired hack team tries to perform a "wipe"
+**Scenario:** Attacker hires a hack team to perform a "wipe", hence delete all data
 
-Counter Measures: We regularly keep back-up dumpes on usb-sticks around the world
+Counter Measures: The Foundtaion regularly keep back-up dumpes on usb-sticks around the world
 
 **Scenario:** Attacker tries a brute force attack against auth cloud function on multiple accounts to trigger them to lock down in an attempt to disrupt the service
 
-Counter Measures: Only allow function access for authenticated users. When a user registers they get a unique token. This is then used to access every function after that. Any attempt to access such a function will be rejected by google. 
+Counter Measures: The Foundation will only allow function access for authenticated users. When a user registers they get a unique token. This is then used to access every function after that. Any attempt to access such a function with the token will be rejected.
 
-**Scenario:** Physical access with the target pc due to burglary or theft
+**Scenario:** Attacker gets physical access with a target laptop due to burglary or theft.
 
-Counter Measures: Encrypted, backed-up laptops with hardened passwords
+Counter Measures: The Foundation encrypts and back-up laptops reguraly
+
+**Scenario** State backed attacker uses electronics-sniffing dogs to find hidden usb-sticks in Wipe operation
+
+Counter Measures: The Foundation keeps copies at multiple locations around the world
 
 **Scenario:** Attacker tries to manipulate a voting record
 
 Counter Measures: A generated SHA 3 hash of the file is stored in bitcoin blockchain
 
-**Scenario:** Attacker tries to reverse engineer code in app (Advanced Persistent Threat)
+**Scenario:** Attacker tries to reverse engineer code in app to find weaknesses
 
-Counter Measures: We obfuscate the code on Android. On iOS the app binary is encrypted using Apple's fairplay. The only way to decrypt encrypted binary data is on a jailbroken device with a few special tools installed. This gives machine code, which is not human-readable. Decompilers can present the app logic in Assembler and give some basic information about method and class names, but trying to figure out the app logic is exceedingly difficult.
+Counter Measures: The Foundation obfuscate the code on Android. On iOS the app binary is encrypted using Apple's fairplay. The only way to decrypt encrypted binary data is on a jailbroken device with a few special tools installed. This gives machine code, which is not human-readable. Decompilers can present the app logic in Assembler and give some basic information about method and class names, but trying to figure out the app logic is exceedingly difficult.
 
 **Scenario:** Attacker uses a zero-day vulnerability with a specific goal of disrupting the service by taking over target computer (Advanced Persistent Threat)
 
